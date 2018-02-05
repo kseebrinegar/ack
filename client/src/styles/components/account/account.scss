@@ -1,0 +1,499 @@
+.section-login, .register-section,  .section-forgotpassword, .my-account-section { 
+    margin: 0 auto;
+    padding: 25px 4% 50px 4%;
+    min-height: 575px;
+    margin-bottom: 100px;
+    max-width: 1200px;
+}
+
+.my-account-section {
+	margin-bottom: 25px;
+	padding-bottom: 0px;
+}
+
+.address-details li {
+	font-style: italic;
+	color: black;
+	padding: 5px 0px;
+}
+
+.address-details li:first-of-type {
+	padding: 0px 0px 5px 0px;
+}
+
+.my-account-section:after {
+	clear: both;
+	display: table;
+	content: ""
+}
+
+.section-login h2, .register-section h2, .section-forgotpassword h2, .my-account-section h2 {
+	color: #333333;
+    font-size: 42px;
+    border-bottom: 1px solid $darkgrey;
+   	padding-bottom: 25px;
+}
+
+.my-account-section h2 {
+	border-bottom: none;
+	float: left;
+}
+
+.logout {
+	float: right;
+	font-size: 22px;
+	color: red;
+	padding-top: 12px;
+	cursor: pointer;
+}
+
+.logout:hover {
+	color: $darkgrey;
+}
+
+.border-under-account {
+	border-bottom: 1px solid $darkgrey;
+	clear: both;
+}
+
+.left-account-info {
+	float: left;
+	width: 35%;
+	margin-top: 25px;
+	padding-bottom: 50px;
+	border-right: 1px solid $darkgrey;
+	padding-right: 20px;
+	min-height: 800px;
+}
+
+.right-account-info {
+	float: right;
+	width: 65%;
+	margin-top: 25px;
+	padding-left: 20px;
+}
+
+.account-user-name,  .order-history {
+	color: #333333;
+	font-size: 26px;
+}
+
+.user-email {
+	margin: 5px 0px 25px 0px;
+	color: $darkgrey;
+	font-weight: 300;
+	font-size: 12px;
+}
+
+.primary-address {
+	color: #333333;
+	font-size: 26px;
+}
+
+.no-address {
+	font-size: 12px;
+	color: red;
+	margin: 5px 0px 25px 0px;
+	font-weight: 300;
+}
+
+.no-orders-placed {
+	color: red;
+	margin-top: 10px;
+	font-size: 12px;
+}
+
+.section-login .emailError, .section-login .passwordError, .section-login .credError, .register-section .nameError,
+.register-section .emailError, .register-section .passwordError, .register-section .credError, .section-forgotpassword .emailError,
+.section-forgotpassword .credError, .my-account-section .credError {
+	color: red;
+	font-size: 12px;
+	font-weight: 300;
+	padding: 0;
+	margin: 10px 0px;
+	float: none;
+}
+
+.visibility-hidden {
+	visibility: hidden;
+}
+
+.visibility-visible {
+	visibility: visible;
+}
+
+.section-login .passwordError, .register-section .passwordError {
+	margin-bottom: 20px;
+}
+
+.section-login .emailError span, .section-login .passwordError span, .section-login .credError span, 
+.register-section .nameError span, .register-section .passwordError span, .register-section .emailError span, .credError span,
+.section-forgotpassword .emailError span, .section-forgotpassword .credError span {
+	color: black;
+	font-weight: 900;
+	padding-right: 5px;
+}
+
+.section-login form, .register-section form, .section-forgotpassword form {
+	width: 300px;
+	margin: 25px auto 50px auto;
+}
+
+.send-message form {
+	width: 300px;
+	margin: 25px 0px 50px 0px;
+}
+
+.section-login input, .register-section input, .section-forgotpassword input {
+	display: block;
+	border: 1px solid $darkgrey;
+	border-radius: 3px;
+	padding: 10px;
+	margin-bottom: 25px;
+	width: 300px;
+	color: black;
+	box-shadow: inset 0 1px 3px #ddd
+}
+
+.my-account-section input, .send-message input, .send-message textarea {
+	display: block;
+	border: 1px solid $darkgrey;
+	border-radius: 3px;
+	padding: 5px;
+	margin-bottom: 15px;
+	width: 300px;
+	color: black;
+	box-shadow: inset 0 1px 3px #ddd
+}
+
+.send-message textarea {
+	width: 100% !important;
+}
+
+.section-forgotpassword input {
+	margin-bottom: 10px;
+}
+
+.section-login input:focus, .register-section input:focus, .section-forgotpassword input:focus, 
+.my-account-section input:focus, .send-message input:focus {
+	outline: auto 5px -webkit-focus-ring-color;
+}
+
+.section-login label, .register-section label, .section-forgotpassword label  {
+	display: block;
+	color: black;
+	font-size: 22px;
+	margin-bottom: 10px;
+}
+
+.my-account-section label, .send-message label {
+	display: block;
+	color: black;
+	font-size: 16px;
+	margin-bottom: 5px;
+}
+
+.section-login .password, .register-section .password {
+	float: left;
+}
+
+.section-login .forgot-password, .register-section .forgot-password {
+	display: block;
+	float: right;
+	padding-top: 10px;
+}
+
+.section-login button, .register-section button, .section-forgotpassword button, .my-account-section button,
+.send-message button {
+	padding: 10px 20px;
+    border-radius: 3px;
+    color: white;
+    background: red;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.section-login button:active, .register-section button:active, .section-forgotpassword button:active,
+.my-account-section button:active, .send-message button:active {
+	background: darkred;
+}
+
+.my-account-section button, .send-message button {
+	margin-top: 25px;
+	float: left;
+	margin-right: 25px;
+}
+
+.my-account-section .cancel-button {
+	background: white;
+	color: black;
+}
+
+.section-login p, .register-section p, .section-forgotpassword p {
+	padding: 10px 5px 10px 10px;
+	float: right;
+	color: black;
+}
+
+.section-forgotpassword .nofity-user-for-sending-email {
+	padding-left: 0px;
+	color: blue;
+	font-weight: 300;
+	font-size: 12px;
+	float: none;
+	margin-bottom: 10px;
+}
+
+.section-login span, .register-section span, .section-forgotpassword span  {
+	font-size: 12px;
+}
+
+.section-login a, .register-section a, .section-forgotpassword a, .my-account-section a {
+	text-decoration: none;
+	color: blue;
+}
+
+.section-login a:hover, .register-section a:hover, .section-forgotpassword a:hover {
+	color: red;
+}
+
+.section-login a:active, .register-section a:active, .section-forgotpassword a:active {
+	color: darkred;
+}
+
+.past-orders-container {
+	background: $lightgrey;
+	width: 100%;
+	border-radius: 5px;
+	border: 1px solid $darkgrey;
+	padding: 15px;
+	margin-bottom: 25px;
+}
+
+.past-orders-float-right .cancel-order-button {
+	font-size: 18px;
+	color: rgb(51, 51, 51);
+}
+
+.past-orders-container:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.past-orders-container p {
+	font-size: 12px;
+	color: rgb(51, 51, 51);
+}
+
+
+.past-orders-float-left, .past-orders-float-left div {
+	float: left;
+}
+
+.position-realitive {
+	position: relative;
+}
+
+.past-orders-float-left .delivery-date {
+	clear: both;
+	margin: 25px 0px;
+}
+
+.past-orders-float-left .delivery-date span {
+	color: rgb(51, 51, 51);
+	font-style: italic;
+	padding-left: 5px;
+}
+
+.past-orders-float-left div:nth-child(2), .past-orders-float-left div:nth-child(3)  {
+	margin-left: 25px;
+}
+
+.past-orders-float-left div:nth-child(3) p:last-of-type {
+	color: blue;
+	cursor: pointer;
+}
+
+.past-orders-float-left div p:first-of-type {
+	margin-bottom: 5px;
+	font-weight: 600;
+	color: black;
+}
+
+.past-orders-float-right {
+	float: right;
+}
+
+.past-orders-float-right p:first-of-type {
+	margin-bottom: 5px;
+	font-weight: 600;
+	color: black;
+}
+
+.past-orders-float-right span {
+	font-style: italic;
+	color: rgb(51, 51, 51);
+}
+
+.order-items {
+	height: 400px;
+	border-top: none;
+	border-radius: 5px;
+	margin-bottom: 25px;
+	position: relative;
+	max-height: 200px;
+	overflow: scroll;
+	clear: both;
+	background: white;
+}
+
+.popup-address {
+	z-index: 205;
+	position: absolute;
+	border-radius: 5px;
+	background: white;
+	border: 1px solid $darkgrey;
+	left: -100px;
+	top: 50px;
+	padding: 15px;
+	width: 200px;
+	display: none;
+}
+
+.popup-address li {
+	color: rgb(51, 51, 51);
+	font-size: 12px;
+}
+
+.small-triangle {
+   width: 0; 
+   height: 0; 
+   border-left: 15px solid transparent;
+   border-right: 15px solid transparent;
+   border-bottom: 15px solid $darkgrey;
+   z-index: 21;
+   position: absolute;
+   top: -15px;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+.small-triangle div {
+	width: 0; 
+   height: 0; 
+   border-left: 14px solid transparent;
+   border-right: 14px solid transparent;
+   border-bottom: 14px solid white;
+   position: absolute;
+   left: -14px;
+   top: 1px;
+}
+
+@media (max-width: 1012px) {
+
+	.left-account-info {
+		float: none;
+		width: 500px;
+		padding-bottom: 50px;
+		border-right: none;
+		padding-right: 20px;
+		min-height: 100%;
+		margin: 25px auto 0 auto;
+	}
+
+	.past-orders-container:first-of-type {
+		margin-top: 50px;
+	}	
+
+	.right-account-info {
+		border-top: 1px solid $darkgrey;
+		float: none;
+		width: 100%;
+		//padding: 0px 4%;
+		margin: 50px 0px;
+		padding-left: 0px;
+	}
+
+	.my-account-section input {
+		width: 100%;
+	}
+
+	.right-account-info .order-history {
+		margin-top: 25px;
+	}
+
+	.address-details li {
+		border-bottom: 1px solid $lightgrey;
+	}
+
+}
+
+@media (max-width: 768px) {
+	.section-login h2, .register-section h2 {
+    	font-size: 22px;
+    	text-align: center;
+	}
+
+	.my-account-section h2 {
+		font-size: 22px;
+	}
+
+	.logout {
+		float: right;
+		font-size: 14px;
+		color: red;
+		padding-top: 6px;
+		cursor: pointer;
+	}
+}
+
+@media(max-width: 668px) {
+
+	.past-orders-float-right {
+		float: none;
+		clear: both;
+		margin-bottom: 15px;
+	}
+
+	.past-orders-float-left .delivery-date {
+		clear: both;
+		margin: 25px 0px;
+		margin-bottom: 0px;
+	}
+
+}
+
+@media(max-width: 536px) {
+	
+	.left-account-info {
+		float: none;
+		width: 100%;
+		padding-bottom: 50px;
+		border-right: none;
+		padding-right: 0px;
+		min-height: 100%;
+		margin: 25px auto 0 auto;
+	}
+
+	.my-account-section input {
+		width: 100%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

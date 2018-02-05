@@ -1,0 +1,183 @@
+.about-section {
+	max-width: 2000px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.about-banner {
+	width: 100%;
+}
+
+.about-banner img {
+	width: 100%;
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+	filter: blur(5px);
+}
+
+.about-section-one {
+	background: rgb(246, 244, 245);
+}
+
+.about-section-three {
+	padding: 200px 0px;
+}
+
+.about-section-one, .about-section-two {
+	padding: 100px 0px 100px 0px;
+	position: relative;
+}
+
+.about-section-two-child {
+	position: relative;
+	left: 0%;
+	width: 100%;
+	transition: 1.5s;
+}
+
+.about-section-one:after, .about-section-two:after, .about-section-two-child-animation:after {
+	clear: both;
+	display: table;
+	content: ""
+}
+
+.about-pic-one-container, .story-so-far, .our-approach-two, .about-pic-two-container-two {
+	float: left;
+	width: 50%;
+	padding: 0 4%;
+}
+
+.our-approach-two, .about-pic-two-container-two { 
+	margin-top: 50px;
+}
+
+.about-pic-two-container, .our-approach {
+	float: right;
+	width: 50%;
+	padding: 0 4%;
+}
+
+.about-pic-one {
+	width: 100%;
+	display: block;
+	position: relative;
+	right: 0%;
+	transition: 1s;
+}
+
+.about-pic-two {
+	width: 100%;
+	display: block;
+	transition: 1s;
+}
+
+.story-so-far-para {
+	max-width: 600px;
+	position: relative;
+	transition: 1s;
+	left: 0%;
+}
+
+.our-approach-para {
+	max-width: 600px;
+}
+
+.about-section button {
+    font-size: 14px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    padding: 15px 15px;
+    margin-top: 25px;
+    width: 200px;
+    cursor: pointer;
+    background: red;
+}
+
+.about-section button:active {
+    background: darkred;
+}
+
+.story-so-far h2, .our-approach h2, .our-approach-two h2 {
+	color: rgb(51, 51, 51);
+	font-size: 38px;
+	margin-bottom: 25px;
+}
+
+.story-so-far p, .our-approach p, .our-approach-two p {
+	color: rgb(51, 51, 51);
+	font-style: italic;
+}
+
+.collection-header {
+	font-size: 42px;
+	color: rgb(51, 51, 51);
+	text-align: center;
+}
+
+.collection-header ~ div {
+	margin-top: 50px;
+	width: 200px;
+	margin: 0 auto;
+}
+
+.page-404 {
+	height: 600px;
+	margin-top: 100px;
+}
+
+.page-404 h1, .page-404 p {
+	font-size: 42px;
+	text-align: center;
+	color: rgb(51, 51, 51);
+}
+
+.page-404 p {
+	font-size: 16px;
+}
+
+.page-404 img {
+	display: block;
+	margin: 0 auto;
+}
+
+.page-404 a {
+	color: blue;
+}
+
+@media(max-width: 800px) {
+
+	.story-so-far, .our-approach, .our-approach-two {
+		float: none;
+		width: 100%;
+		margin-bottom: 50px;
+	}
+
+	.about-pic-one-container, .about-pic-two-container, .about-pic-two-container-two {
+		float: none;
+		width: 100%;
+	}
+
+	.page-404 img {
+		width: 100%;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

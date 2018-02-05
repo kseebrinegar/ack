@@ -1,0 +1,60 @@
+footer {
+	background: black;
+	z-index: 15;
+	position: absolute;
+	width: 100%;
+}
+
+footer h3 {
+	color: white;
+	line-height: 9.8vw;
+	font-size: 15vw;
+	text-align: center;
+}
+
+.footer-container {
+	width: 100%;
+	padding: 0px 10%;
+}
+
+.footer-container:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.footer-left-list {
+	float: left;
+	color: white;
+	margin-bottom: 25px;
+	width: 100%;
+	margin-top: 160px;
+}
+
+.footer-left-list ul {
+	float: left;
+}
+
+.footer-left-list li {
+	float: left;
+	font-size: 12px;
+	margin-left: 10px;
+	line-height: 20px;
+}
+
+.footer-left-list li {
+	margin-left: 0px;
+}
+
+.footer-icons p {
+	font-size: 18px;
+	margin-left: 10px;
+}
+
+@media(max-width: 600px) {
+
+	.footer-container {
+		width: 100%;
+		padding: 0px 4%;
+	}
+}

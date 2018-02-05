@@ -1,0 +1,140 @@
+.productItems {
+	width: 100%;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.display-open {
+	display: block;
+}
+
+.display-closed {
+	display: none;
+}
+
+.productItem-thumbnail {
+	width: 275px;
+	margin: 25px 15px;
+	border: 1px solid white;
+	border-radius: 3px;
+	position: relative;
+}
+
+.productItem-thumbnail .eye-view {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: red;
+	font-size: 16px;
+}
+
+.productItem-thumbnail .eye-view {
+	display: none;
+}
+
+.productItem-thumbnail .eye-view p:hover {
+	color: rgb(51, 51, 51);
+}
+
+.eye-view span {
+	padding-left: 10px;
+	font-size: 18px;
+	color: rgb(51, 51, 51);
+}
+
+.productItem-thumbnail:hover {
+	border: 1px solid $lightgrey;
+	cursor: pointer;
+	margin-bottom: 18px;
+}
+
+.productItem-thumbnail:hover .product-ranks, .productItem-thumbnail:hover .eye-view{
+	display: block;
+}
+
+.productItem-thumbnail-total-color {
+	color: rgb(51, 51, 51);
+	margin: 0px 10px 25px 10px;
+}
+
+.productItem-thumbnail-discription {
+	margin: 0px 10px;
+}
+
+.productItem-thumbnail-discription p {
+	font-size: 16px;
+}
+
+.productItem-thumbnail-discription p:first-of-type {
+	color: rgb(51, 51, 51);
+	padding: 10px 0px;
+	border-top: 1px solid $lightgrey;
+}
+
+.productItem-thumbnail-discription p:nth-child(2) {
+	padding-bottom: 10px;
+}
+
+.productItem-thumbnail-price {
+	float: left;
+	margin-top: 10px;
+}
+
+.productItem-thumbnail .product-ranks {
+	float: right;
+	display: none;
+}
+
+.productItem-thumbnail .star-rank {
+	float: left;
+	font-size: 16px;
+	margin: 10px ;
+}
+
+.productItem-thumbnail .star-rank li {
+	color: black;
+}
+
+.productItem-thumbnail .highest-rated-rank {
+	float: left;
+	position: relative;
+	margin-top: 5px;
+	width: 30px;
+	height: 30px;
+	border: 2px solid black;
+	background: $lightgrey;
+	border-radius: 50%;
+	margin-bottom: 10px;
+}
+
+.productItem-thumbnail .highest-rated-rank p {
+	position: absolute;
+	top: 50%;
+	left: 54%;
+	transform: translate(-50%, -50%);
+	border-top: none;
+}
+
+@media(max-width: 864px) {
+	.productItem-thumbnail:hover .eye-view{
+		display: none;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

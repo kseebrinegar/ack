@@ -1,0 +1,185 @@
+.sneakers-section {
+	margin: auto;
+	top: 200px;
+	position: relative;
+}
+
+.sneakers-section:after {
+ 	content: "";
+  	display: table;
+ 	clear: both;
+}
+
+.sneakers-photos-container {
+	overflow: hidden;
+	width: 100%;
+	position: relative;
+	max-width: 1500px;
+	margin: auto;
+}
+
+.sneakers-background-header h3 {
+	color: $lightgrey;
+	position: absolute;
+	line-height: 11.1vw;
+	font-size: 15vw;
+	top: -14%;
+	right: 0%;
+	z-index: -10;
+}
+
+.sneakers-background {
+	width: 60%;
+}
+
+.sneakers-background button {
+	position: absolute;
+	top: 50%;
+	left: 30%;
+	transform: translate(-50%, -50%);
+	padding: 15px 20px;
+	border-radius: 3px;
+	color: white;
+	background: red;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.sneakers-background button:active {
+	background: darkred;
+}
+
+.sneakers-background img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.sneakers-image-slider {
+	position: absolute;
+	right: -100%;
+	top: 16%;
+	transition: 1s;
+	width: 90%;	
+}
+
+.slide-image {
+	margin: 15px;
+	float: left;
+	position: relative;
+	width: 23%;
+}
+
+.slide-image img {
+	width: 100%;
+	height: auto;
+	display: block;
+	-webkit-box-shadow: -2px -2px 19px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: -2px -2px 19px 0px rgba(0,0,0,0.75);
+	box-shadow: -2px -2px 19px 0px rgba(0,0,0,0.75);
+}
+
+.sneaker-image-info {
+	position: absolute;
+	width: 100%;
+	background: rgba(255, 255, 255, .0);
+	bottom: 0%;
+	cursor: pointer;
+}
+
+.sneaker-image-info:hover {
+	background: rgba(167, 151, 95, .9);
+}
+
+.sneaker-image-info p {
+	color: white;
+	padding: 15px 10px;
+	font-size: 10px;
+	float: left;
+}
+
+.sneaker-image-info .fa-arrow-right {
+	float: right;
+}
+
+.transparent-image {
+	filter: opacity(30%);
+}
+
+.sneakers-arrow-close, .sneakers-arrow-open {
+	background: rgb(51, 51, 51);
+	position: absolute;
+	top: 5%;
+	right: 5%;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.sneakers-arrow-close {
+	display: none;
+}
+
+.sneakers-arrow-close .fa-arrow-right, .sneakers-arrow-open .fa-arrow-left {
+	color: white;
+	position: relative;
+	top: -0%;
+	left: 50%;
+	transform: translate(-50%, 60%);
+}
+
+@media(max-width: 1100px) {
+
+	.sneakers-section {
+		top: 200px;
+	}
+
+}
+
+@media(max-width: 965px) {
+	.sneakers-section {
+		margin: auto;
+		top: 0px;
+		position: relative;
+	}
+
+
+	.sneakers-background {
+		width: 100%;
+		max-width: none;
+		position: static;
+	}
+
+	.sneakers-background button {
+		position: absolute;
+		z-index: 12;
+		top: 50%;
+		left: 50%;
+	}
+	
+	.sneakers-background-header h3 {
+		position: static;
+		text-align: right;
+	}
+
+	.sneakers-image-slider {
+		display: none;
+	}
+
+	.sneakers-arrow-close, .sneakers-arrow-open {
+		display: none;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+

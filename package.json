@@ -1,0 +1,36 @@
+{
+  "name": "serverec",
+  "version": "1.0.0",
+  "description": "E-com website",
+  "main": "index.js",
+  "engines": {
+    "node": "8.6.0",
+    "npm": "5.3.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "seed": "node seed/products.js",
+    "client": "npm run dev-server --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "author": "Casey Brinegar",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^6.2.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.2",
+    "concurrently": "^3.5.1",
+    "express": "^4.16.2",
+    "jsonwebtoken": "^7.1.9",
+    "moment": "^2.20.1",
+    "mongoose": "^4.13.5",
+    "nodemon": "^1.12.1",
+    "redux-persist": "^5.4.0",
+    "sendgrid": "^5.2.3",
+    "stripe": "^5.4.0",
+    "uuid": "^3.2.1",
+    "validator": "^5.6.0"
+  }
+}
