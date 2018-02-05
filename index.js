@@ -5,7 +5,7 @@ const path = require('path');
 const key = require('./config/keys');
 
 mongoose.Promise = global.Promise;
-mongoose.connect(keys.mongoURI);
+mongoose.connect(key.mongoURI);
 
 //|| 'mongodb://localhost:`27017/clothesStore'
 //const {seed} = require('./seed/products');
