@@ -2,9 +2,10 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const path = require('path');
+const key = require('./config/keys');
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://heroku_t8scfwmw:16pbj28pfjqevict0d910qto05@ds125058.mlab.com:25058/heroku_t8scfwmw');
+mongoose.connect(keys.mongoURI);
 
 //|| 'mongodb://localhost:`27017/clothesStore'
 //const {seed} = require('./seed/products');
