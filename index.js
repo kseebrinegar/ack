@@ -38,7 +38,7 @@ require('./routes/getOrders')(app);
 
 if (process.env.NODE_ENV === 'production') {
 	// Express will serve up production assets
-	app.use(express.static('/index.html'));
+	app.use(express.static('client/public'));
 
 }
 
