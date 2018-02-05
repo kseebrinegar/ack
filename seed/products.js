@@ -6,7 +6,7 @@ require('../models/accessories');
 const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
-mongoose.connect('mongodb://heroku_svn09v7x:58uatr511vskhndpldmbjl38qo@ds125048.mlab.com:25048/heroku_svn09v7x');
+mongoose.connect('mongodb://heroku_t8scfwmw:16pbj28pfjqevict0d910qto05@ds125058.mlab.com:25058/heroku_t8scfwmw');
 
 var Shoe = mongoose.model('shoe');
 var Clothing = mongoose.model('clothing');

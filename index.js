@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const path = require('path');
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://heroku_svn09v7x:58uatr511vskhndpldmbjl38qo@ds125048.mlab.com:25048/heroku_svn09v7x');
+mongoose.connect('mongodb://heroku_t8scfwmw:16pbj28pfjqevict0d910qto05@ds125058.mlab.com:25058/heroku_t8scfwmw');
 
 //|| 'mongodb://localhost:`27017/clothesStore'
 //const {seed} = require('./seed/products');
